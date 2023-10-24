@@ -1,0 +1,16 @@
+@import '../variables/variables';
+.footer{
+    width: 100%;
+    color: $color-30;
+
+   &__copyright{
+    width: 100%;
+    text-align: center;
+    padding: 2.5rem 0;
+    background: $color-5;
+    font-weight: 500;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+   }
+
+}

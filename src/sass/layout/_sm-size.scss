@@ -1,0 +1,119 @@
+@media only screen and (max-width: 600px){
+    .header{
+        width: 100vw;
+        background-image: url('/src/assets/header-bg-mb-x.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+
+        &__text{
+            margin-top: 100%;
+            p{
+                font-size: 1.6rem;
+            }
+        }
+        &__title{
+            font-size: 3rem;
+
+        }
+       .nav{
+           &__list{
+                position: relative;
+                background: $color-10;
+                position: fixed;
+                top: 0;
+                right: -20rem;
+                width: 20rem;
+                height: 100vh;
+                padding-top: 5rem;
+                display: block;
+                z-index: 2;
+                transition: right .5s;
+                .menu--close{
+                    position: absolute;
+                    top: 2.5rem;
+                    left: 2.5rem;
+                    cursor: pointer;
+                    &:hover{
+                        background: $color-60;
+
+                    }
+                }
+            } 
+            &__item{
+                margin: 2.5rem;
+                a{
+                    position: relative;
+                    &::before{
+                        background: $color-60;
+                    }
+                }
+                &:hover{
+                    a{
+                        color: $color-60;
+                    }
+                }
+            }
+            .menu{
+
+
+                &--open, &--close{
+                    padding: 1rem 1.2rem;
+                    display: block;
+                    height: 4rem;
+                    path{
+                        fill: $color-white;
+                    }
+                }
+                &--open:hover{
+                    path{
+                        fill: $color-10;
+                    }
+                }
+            }
+        }
+    }
+
+    .about{
+        margin: 0 auto;
+        &__col{
+            &--1,
+            &--2{
+                flex-basis: 100%;
+            }
+
+            &--1{
+                margin-bottom: 3rem;
+            }
+            &--2{
+                font-size: .9rem;
+                .about-me{
+                    word-wrap: break-word;
+                }
+                .tabs{
+                    &__links{
+                        font-size: 1.25rem;
+                        margin-right: 1rem;
+                    }
+                }
+            }
+            
+        }
+
+
+    }
+
+     h2.sub__title{
+        font-size: 4rem ;
+    }
+
+    .contact{
+        &__row{
+            display: block;
+        &--right{
+            margin-top: 5rem;
+        }
+    }
+    }
+
+}
